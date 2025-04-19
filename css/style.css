@@ -1,0 +1,636 @@
+body{
+    overflow-x: hidden;
+}
+
+.nav-img{
+    width: 64px;
+}
+
+.bg-secondary{
+    background: #333 !important;
+}
+
+nav.bg-secondary{
+    background: #444 !important;
+}
+
+nav{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-item{
+    border-radius: 30px; 
+    margin: 0 5px;
+    padding: 0 20px;
+    transition: .3s ease;
+}
+
+.nav-item:hover{
+    background-color: #333333e1;
+    box-shadow: 0 4px 8px #222;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.hero-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(90vh - 96px);
+}
+
+.hero-content{
+    max-width: 640px;
+    margin-left: 10%;
+    z-index: 999;
+    margin-top: 10%;
+}
+
+.hero-content h1{
+    font-size: 64px;
+    letter-spacing: 1.6px;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(128, 128, 128 , 0.4);
+    margin-bottom: 32px;
+}
+
+.hero-description{
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    max-width: 560px;
+    color: gray;
+}
+  
+
+.btn-signing-main{
+    text-decoration: none;
+    border: 1px solid #2a2a2a;
+    padding: 10px 40px;
+    border-radius: 50px;
+    background-color: rgb(184, 184, 184);
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    transition: .2s ease;
+    margin-top: 0px;
+    color: #e7e7e7;
+}
+
+.btn-signing-main:hover{
+    background-color: rgb(128, 128, 128);
+}
+
+.more{
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: transparent;
+    border: 2px solid #6d00ac;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    transition: .2s ease;
+    margin-top: 0px;
+    color: rgb(155, 0, 230);
+    transition: .3s;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.more:hover{
+    color: #e7e7e7;
+    background-color: #6d00ac;
+    box-shadow: 0 0 5px #6d00ac,
+                0 0 25px #6d00ac,
+                0 0 50px #6d00ac;
+}
+
+.widget{
+    background-color: #252525;
+    border-radius: 50px;
+    display: flex;
+    margin-top: 50px;
+    width: 500px;
+    padding: 10px 60px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+    transition: .2s;
+}
+.widget:hover{
+    box-shadow: 0 6px 12px rgba(0,0,0,0.7)
+}
+
+.widget-item p span{
+    color: #aaa;
+}
+
+.line{
+    background-color: #727272;
+    width: 1px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+h1 img{
+    width: 100px;
+    margin-right: -40px;
+    margin-left: -30px;
+    margin-bottom: 5px;
+}
+
+.robot-3d{
+    position: absolute;
+    top: 10%;
+    right: -20%;
+    cursor: grab;
+}
+
+.about-title{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.about-content{
+    margin-left: 10%;
+    margin-top: 15%;
+    position: relative;
+    z-index: 11;
+}
+
+.about-description{
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    max-width: 560px;
+    color: #ccc;
+}
+
+.man{
+    position: absolute;
+    cursor: grab;
+    top: 100%;
+    right: -20%;
+    scale: 0.8;
+}
+
+.card{
+    margin-bottom: 50px;
+    background-color: #222 !important;
+    box-shadow: 0 4px 8px rgb(10, 10, 10);
+}
+
+.projects-title{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.projects-container{
+    margin-top: 500px;
+}
+
+.skills-content{
+    background-image: linear-gradient(135deg , #444 , #666);
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 1024px) {
+    .skills-content {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.skill{
+    margin: 50px 20px;
+    scale: 1.2;
+}
+
+.skills-title{
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.skill-name{
+    position: relative;
+    text-wrap: nowrap;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.html{
+    color: rgb(255, 102, 0);
+}
+
+.css{
+    color: rgb(0, 119, 255);
+}
+
+.js{
+    color: rgb(255, 238, 0);
+}
+
+.tailwind{
+    color: rgb(0, 132, 255);
+}
+
+.tailwind span{
+    color: #000;
+}
+
+.bootstrap{
+    color: rgb(75, 0, 146);
+}
+
+.git{
+    color: rgb(255, 102, 0);
+}
+
+.github{
+    color: rgb(41, 41, 41);
+}
+
+.figma{
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.f{
+    color: #ff3b00;
+}
+
+.i{
+    color: #ae4dff;
+}
+
+.g{
+    color: #00beff;
+}
+
+.m{
+  color: #00d47b;
+}
+
+.a{
+    color: #ff3b00;
+}
+
+.box-icons{
+    color: rgb(255, 187, 85);
+}
+
+.jquery{
+    color: rgb(0, 100, 255);
+}
+
+
+.contact-title{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 350px;
+}
+
+.contact-card {
+    border-radius: 10px;
+    filter: drop-shadow(0 5px 10px 0 #ffffff);
+    width: 400px;
+    height: 180px;
+    color: #000;
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    transition: 0.3s ease-in;
+    margin: 20px 0;
+    cursor: pointer;
+    margin-left: -50px;
+  }
+  
+  .contact-card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    left: -15px;
+    background: #6000a0;
+    height:220px;
+    width: 25px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.3s ease-in;
+  }
+
+  .contact-card:hover::before{
+    transform: scale(40);
+  }
+
+  .contact-card:hover{
+      color: #ffffff;
+  }
+
+  .contact-card p{
+      padding: 10px 0;
+      font-size: 20px;
+  }
+
+  .contact-3d-model{
+    position: absolute;
+    top: 420%;
+    right: -20%;
+}
+
+.footer{
+    margin-top: 400px;
+    margin-bottom: 50px;
+}
+
+.footer-logo{
+    text-align: center;
+}
+
+ .footer-logo img{
+    width: 150px;
+    height: 150px;
+    padding: 12px;
+}
+
+ .footer-logo-desc{
+   text-align: center;
+}
+
+ .footer-header{
+    margin-bottom: 25px;
+}
+
+.popular-links{
+   list-style-type: none;
+}
+
+.popular-links li{
+   margin-bottom: 10px;
+}
+
+.popular-links li a{
+   color:white;
+   text-decoration: none;
+   transition-duration: 500ms;
+}
+
+.popular-links li a:hover{
+    margin-left: 10px;
+}
+
+.get-in-touch{
+   margin-bottom: 12px
+}
+
+.follow-us{
+   text-align: center;
+}
+
+.follow-us a{
+   text-decoration: none;
+   font-size: 24px;
+   color:white;
+   margin: 0 5px
+}
+/* responsativity */
+@media (max-width: 1300px) {
+    .hero-content{
+        margin-top: 85%;
+        margin-bottom: 200px;
+    }
+    .robot-3d{
+        scale: 0.8;
+        top: -25%;
+        right: 2%;
+    }
+    .contact-3d-model{
+        position: absolute;
+        scale: 0.8;
+        top: 555%;
+        right: -25%;
+    }
+    .about-content{
+        margin-top: 70%;
+        margin-bottom: 200px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5%;
+    }
+    .about-description{
+        max-width: 90%;
+    }
+    .about-title{
+        margin-top: -250px;
+        font-size: 32px;
+    }
+    .man{
+        scale: 0.8;
+        top: 150%;
+        right: 2%;
+    }
+    main{
+        margin-bottom: 200px;
+        margin-top: 40px;
+    }
+    .man{
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .projects-content{
+        margin-left: 80px;
+    }
+    .contact-3d-model{
+        top: 575%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .about-content{
+        margin-top: 90%;
+    }
+    .man{
+        margin-top: 20%;
+    }
+    .contact-3d-model{
+        top: 590%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .contact-3d-model{
+        top: 580%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .man{
+        top: 120%;
+    }
+    .hero-content{
+        margin-bottom: 200px;
+    }
+    .about-content{
+        margin-top: 100%;
+    }
+    .man{
+        margin-top: 30%;
+    }
+    .projects-content{
+        margin-left: 0;
+    }
+    .contact-content{
+        margin-top: 800px;
+    }
+    .contact-card{
+        margin: 20px auto;
+    }
+    .contact-3d-model{
+        width: 200vw;
+        top: 650%;
+        right: -50%;
+    }
+
+}
+@media (max-width: 850px) {
+    .about-content{
+        margin-top: 120%;
+    }
+    .man{
+        margin-top: 10%;
+    }
+}
+@media (max-width: 767px){
+    .hero-content{
+        margin-top: 400px;
+    }
+    .robot-3d{
+        scale: 0.5;
+        top: -25%;
+        right: -50%;
+        width: 200vw;
+    }
+    .man{
+        scale: 0.5;
+        top: 80%;
+        right: -50%;
+        width: 200vw;
+    }
+    .contact-3d-model{
+        scale: 0.5;
+        top: 700%;
+    }
+    .contact-content{
+        margin-top: 600px;
+    }
+    .about-content{
+        margin-top: 80%;
+    }
+    .hero-content{
+        max-width: 180px;
+        margin-left: 10%;
+    }
+    .hero-content h1{
+        font-size: 40px;
+        min-width: 60vw;
+        margin: 32px 0;
+    }
+    .hero-description{
+        font-size: 16px;
+        min-width: 60vw;
+        margin-bottom: 20px;
+    }
+    .btn-signing-main{
+        font-size: 14px;
+        padding: 14px 32px;
+    }
+    .man{
+        margin-top: 35%;
+    }
+    .widget{
+        flex-direction: column;
+        width: 350px;
+    }
+    .line{
+       display: none;
+    }
+    .projects-content{
+        margin-left: 15%;
+    }
+}
+@media (max-width: 600px){
+    .about-content{
+        margin-top: 100%;
+    }
+    .man{
+        margin-top: 50%;
+    }
+}
+@media (max-width: 575px){
+    .skills-content{
+        margin-left: 30px;
+    }
+}
+@media (max-width: 500px){
+    .about-content{
+        margin-top: 120%;
+    }
+    .projects-content{
+        margin-left: 10%;
+    }
+}
+@media (max-width: 450px){
+    .skills-content{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .contact-3d-model{
+        top: 850%;
+    }
+    .contact-card{
+        width: 300px;
+    }
+}
+@media (max-width: 400px){
+    .about-content{
+        margin-top: 170%;
+    }
+    .widget{
+        position: relative;
+        right: 40px;
+    }
+    .card{
+        scale: 0.95;
+    }
+    .projects-content{
+        margin-left: -20px;
+    }
+
+}
+@media (max-width: 350px){
+    .card{
+        scale: 0.9;
+    }
+}
